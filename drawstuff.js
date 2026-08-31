@@ -526,7 +526,7 @@ function main() {
         var eyeZ = center.z - radius * Math.cos(angle);
         var eye = new Vector(eyeX, 0, eyeZ);
         var at = Vector.subtract(center, eye);
-        var view = {eye:eye, at:at, up:new Vector(1,1,0)};
+        var view = {eye:eye, at:at, up:new Vector(0,1,0)};
         var poly = [{x:-5,y:5,z:10,c:new Color(255,0,0,255)}, {x:5,y:5,z:10,c:new Color(0,255,0,255)}, 
                     {x:5,y:-5,z:10,c:new Color(0,0,0,255)}, {x:-5,y:-5,z:10,c:new Color(0,0,255,255)}];
         
